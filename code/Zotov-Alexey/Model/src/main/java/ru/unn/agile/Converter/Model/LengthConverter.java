@@ -42,6 +42,7 @@ public final class LengthConverter {
         if (koef.get(to) <= 0 || koef.get(from) <= 0) {
             throw new IllegalArgumentException("плохие коэффициенты");
         }
+        
         double check = koef.get(from) / koef.get(to);
 
         if (value < 0 || Double.MAX_VALUE / check < value) {
